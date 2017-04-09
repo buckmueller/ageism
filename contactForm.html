@@ -18,8 +18,10 @@
         <script>
             function validateForm() {
             var x = document.forms["contactForm"]["firstName"].value;
+            var y = document.forms["contactForm"]["lastName"].value;
+            var z = document.forms["contactForm"]["email"].value;
             
-            if (x === "") {
+            if (x === ""  || y === "" || z === "") {
                 alert("Name must be filled out");
                 return false;
                 }
