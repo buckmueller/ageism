@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script language="Javascript" type="text/javascript"> //<![CDATA[ // Create a search control
+        var searchControl = new GSearchControl();
+        // create a search object
+        searchControl.addSearcher(new GwebSearch());
+        // tell Google where to draw the
+        searchboxsearchControl.draw(document.getElementById("search-box"));
+        } GSearch.setOnLoadCallback(OnLoad); //]]> </script> 
+        
         <!-- Google fonts used in this theme  -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,800,600,700,300" rel="stylesheet" type="text/css">  
@@ -37,6 +45,11 @@
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end navbar collapse -->
+                        <div class="searchRight">
+                            <form method="get" action="https://www.google.com/search">
+                            <input type="text" name="q" size="31" value="">
+                            </form>
+                        </div>
                     </nav>
                 </div>
             </div>  <!-- end navbar -->
@@ -56,11 +69,12 @@
                     <!-- start post summaries -->
                     <div class="well">
                         <div class="row">
-                            <!-- replace this with loop outputting col-md-3 div containing photo -->
+                            <!-- THIS SHOULD MAYBE BE DONE WITH PHP IN ORDER TO CREATE BOXES?  Worth consideration -->
                             <div class="content">
                                 <p>GetAgeism.info was created to inform people of the definition, causes, and consequences of age
                                 discrimination, also known as ageism.</p>
                                 
+                                <p>GetAgeism.info is a resource that can be used to learn about ageism</p>
                             </div>
                         </div>
                     </div>
