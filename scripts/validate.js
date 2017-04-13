@@ -1,5 +1,5 @@
 window.onload = function(){
-    var form = document.getElementById("form");
+    var form = document.getElementById("contactForm");
     form.onsubmit = function(e){
         var x = document.forms["contactForm"]["firstName"].value;
         var y = document.forms["contactForm"]["lastName"].value;
