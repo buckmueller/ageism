@@ -1,14 +1,23 @@
 window.onload = function(){
     var form = document.getElementById("form");
     form.onsubmit = function(e){
-        
+        var x = document.forms["contactForm"]["firstName"].value;
+        var y = document.forms["contactForm"]["lastName"].value;
+        var z = document.forms["contactForm"]["email"].value;            
+        if (x === "") {
+            alert("First name must be filled out");
+            return false;
+        }
+                
+        if (y === "") {
+            alert("Last name must be filled out");
+            return false;
+        }
+            
+        if (z === "") {
+            alert("E-mail must be filled out");
+            return false;
+        }    
     }
     
-}
-function makeRed(inputDiv) {
-    inputDiv.style.backgroundColor = "#AA0000";
-}
-function makeClean(inputDiv) {
-	inputDiv.parentNode.style.backgroundColor = "#FFFFFF";
-	inputDiv.parentNode.style.color = "#000000";
 }

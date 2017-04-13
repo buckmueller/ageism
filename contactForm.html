@@ -17,28 +17,7 @@
         <meta name="author" content="">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
         <title>Contact Form</title>
-        <script>
-            function validateForm() {
-            var x = document.forms["contactForm"]["firstName"].value;
-            var y = document.forms["contactForm"]["lastName"].value;
-            var z = document.forms["contactForm"]["email"].value;
-            
-            if (x === "") {
-                alert("First name must be filled out");
-                return false;
-                }
-                
-            if (y === "") {
-                alert("Last name must be filled out");
-                return false;
-                }
-            
-            if (z === "") {
-                alert("E-mail must be filled out");
-                return false;
-                }    
-            }       
-        </script>
+        <script src="scripts/validate.js"></script>
     </head>
     
     <body>
