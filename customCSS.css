@@ -4,4 +4,9 @@ a:focus {
 
 .searchRight{
 	float: right;
+	border-bottom: 2em;
+}
+
+.searchLabel{
+	float: none;
 }
