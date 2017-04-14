@@ -4,9 +4,19 @@ a:focus {
 
 .searchRight{
 	float: right;
-	padding-top: 1.2em;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
 }
 
 .label{
+	float: left;
+	margin-top: 3.2em;
+	padding-top: .3em;
+	padding-left: 28em;
+	margin-right: -28em;
+}
+
+gcse{
+	width: 250px;
 	float: right;
 }
