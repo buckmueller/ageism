@@ -4,9 +4,9 @@ a:focus {
 
 .searchRight{
 	float: right;
-	border-bottom: 2em;
+	padding-top: 1.2em;
 }
 
 .label{
-	float: none;
+	float: right;
 }
