@@ -23,3 +23,8 @@ gcse{
 .indent {
     padding-left: 2em;
 }
+.footer-to-bottom {
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+}
