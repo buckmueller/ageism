@@ -20,3 +20,6 @@ gcse{
 	width: 250px;
 	float: right;
 }
+.indent {
+    padding-left: 2em;
+}
