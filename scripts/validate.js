@@ -1,23 +1,17 @@
 window.onload = function () {
     var form = document.getElementById("contactForm");
     form.onsubmit = function (e) {
-        var x = document.forms["contactForm"]["firstName"].value;
-        var y = document.forms["contactForm"]["lastName"].value;
-        var z = document.forms["contactForm"]["email"].value;            
-        if (x === "") {
-            alert("First name must be filled out");
+        var first = document.getElementById("first");
+        var last = document.getElementById("last");
+        var email = document.getElementById("email");
+        
+        var nameReg = /[a-zA-Z]/g;
+        
+        if (!nameReg.test(first)) {
+            //alert("First name must be filled out ");
+            alert("No special characters");
             return false;
-        }
-                
-        if (y === "") {
-            alert("Last name must be filled out");
-            return false;
-        }
-            
-        if (z === "") {
-            alert("E-mail must be filled out");
-            return false;
-        }    
+        }   
     }
     
 }

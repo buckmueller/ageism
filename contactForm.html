@@ -11,14 +11,14 @@
         <link href="bootstrap3_travelTheme/theme.css" rel="stylesheet">
         <!-- additional CSS -->
         <link href="customCSS.css" rel="stylesheet">
-        
+        <script rel="text/javascript" src="scripts/validate.js"></script>
         
         <meta name="description" content="contact form for reaching Ageism Inc">
         <meta name="keywords" content="contact, form, Ageism">
         <meta name="author" content="Ageism Inc">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
         <title>Contact Form</title>
-        <script src="scripts/validate.js"></script>
+        
     </head>
     
     <body>
@@ -63,10 +63,10 @@
                     <div class="well" id="form inputs">
                         <div class="form-group">
                             <!-- replace this with loop outputting col-md-3 div containing photo -->
-                            <form id="contactForm" name="contactForm" action="http://www.randyconnolly.com/tests/process.php" method="post">
-                                <label>First name:</label><input type="text" name="firstName" class="form-control"><br/>
-                                <label>Last name:</label><input type="text" name="lastName" class="form-control"><br/>
-                                <label>E-mail Address:</label><input type="text" name="email" class="form-control"><br/>
+                            <form id="contactForm" name="contactForm" action="" method="post">
+                                <label>First name:</label><input type="text" id="first" name="firstName" class="form-control"><br/>
+                                <label>Last name:</label><input type="text" id="last" name="lastName" class="form-control"><br/>
+                                <label>E-mail Address:</label><input type="text" id="email" name="email" class="form-control"><br/>
                                 <label>Date</label><input type="date" name="date" class="form-control"><br/>
                                 <label>Description</label><textarea name="description" class="form-control"></textarea><br/>
                                 <input type="reset" value="Reset" class="form-control"><input type="submit" value="Submit" class="form-control">
